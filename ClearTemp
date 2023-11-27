@@ -1,0 +1,12 @@
+@echo off
+echo Clearing desktop cache...
+
+:: Clear system temp directory
+del /s /q %temp%\*
+echo System temp directory cleared.
+
+:: Clear Windows temp directory
+del /s /q %windir%\Temp\*
+echo Windows temp directory cleared.
+
+echo Desktop cache cleared.
